@@ -18,4 +18,5 @@ with the command <code>docker-compose up -d</code>, and when the application is 
 
 ## Demo
 
-![image](https://github.com/MiguelCastro9/Microsservice-consumer-with-RabbitMQ/assets/56695817/66ff4c1a-dc19-45f6-8fc4-f79e4f134d73)
+![Gravação de Tela 2023-07-08 às 16 15 16](https://github.com/MiguelCastro9/Microsservice-consumer-with-RabbitMQ/assets/56695817/94b6a78e-83b5-4977-a5e4-ce9e76940b8f)
+
