@@ -14,8 +14,8 @@ public class ProdutoConsumer {
 
     // ANOTAÇÃO QUE PARA ESCUTAR AS MENSAGEM QUE SÃO ENVIADAS AO RABBITMQ
     @RabbitListener(queues = RabbitMQConstants.FILA_PRODUTO)
-    private void consumidor(ProdutoDto produtoDto) {
-        System.out.println("--- PRODUTO ---");
+    private void produtoConsumer(ProdutoDto produtoDto) {
+        System.out.println("--- [CONSUMER] PRODUTO ---");
         System.out.println(produtoDto.codigo_produto);
         System.out.println(produtoDto.nome_produto);
         System.out.println(produtoDto.valor_produto);

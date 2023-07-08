@@ -23,8 +23,13 @@ public class ProdutoController {
     private RabbitMQService rabbitMQService;
 
     @PostMapping
-    private ResponseEntity enviarProduto(@RequestBody ProdutoDto produtoDto) {
+    private ResponseEntity produtoProducer(@RequestBody ProdutoDto produtoDto) {
         this.rabbitMQService.enviarMensagem(RabbitMQConstants.FILA_PRODUTO, produtoDto);
+        System.out.println("--- [PRODUCER] PRODUTO ---");
+        System.out.println(produtoDto.codigo_produto);
+        System.out.println(produtoDto.nome_produto);
+        System.out.println(produtoDto.valor_produto);
+        System.out.println(produtoDto.quantidade_produto);
         return new ResponseEntity(HttpStatus.OK);
     }
 }
