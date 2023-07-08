@@ -10,10 +10,10 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class RabbitMQService {
-    
+
     @Autowired
     private RabbitTemplate rabbitTemplate;
-    
+
     public void enviarMensagem(String nomeFila, Object mensagem) {
         rabbitTemplate.convertAndSend(nomeFila, mensagem);
     }
