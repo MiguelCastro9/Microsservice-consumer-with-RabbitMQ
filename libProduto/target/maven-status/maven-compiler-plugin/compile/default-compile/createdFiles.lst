@@ -1,0 +1,3 @@
+com/produto/dto/ProdutoDto.class
+com/produto/constants/RabbitMQConstants.class
+com/produto/LibProduto.class
